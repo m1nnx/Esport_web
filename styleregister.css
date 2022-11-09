@@ -1,0 +1,149 @@
+
+input, #address{
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+}
+
+#state{
+	width: 35%;
+}
+
+input[type=text], select, textarea {
+	width: 80%;
+    padding: 12px;
+	margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	background-color: rgba(241,241,241,0.75);
+}
+
+#email{
+    width: 60%;
+    padding: 12px;
+	margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=password], select, textarea {
+    background-color: rgba(241,241,241,0.75);
+	width: 30%;
+    padding: 12px;
+	margin-left: 0;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	resize: none;
+}
+
+input[type=date], select, textarea {
+    background-color: rgba(241,241,241,0.75);
+	width: 30%;
+    padding: 12px;
+	margin-left: 0;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	resize: none;
+}
+
+input[type=radio], select, textarea {
+    width: auto;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	resize: none;
+}
+
+input[type=checkbox], select, textarea {
+    width: auto;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	resize: none;
+}
+
+input[type=tel], select, textarea {
+    background-color: rgba(241,241,241,0.75);
+	width: 30%;
+    padding: 12px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+	resize: none;
+}
+
+select, textarea {
+    width: 60%;
+    padding: 12px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+input[type=submit]{
+	font-family: 'Play', sans-serif;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    background-color: rgba(0,255,255,0.3); 
+    color: rgba(0,0,0,0.8); 
+    border: 2px solid #000000;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(255,255,255,0.3);
+    color: black;
+}
+
+input[type=reset]{
+	font-family: 'Play', sans-serif;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[type=reset]{
+    background-color: rgba(0,255,255,0.3); 
+    color: rgba(0,0,0,0.8); 
+    border: 2px solid rgba(0,0,0,0.8);
+}
+
+input[type=reset]:hover {
+    background-color: rgba(255,255,255,0.3);
+    color: rgba(0,0,0,0.8);
+}

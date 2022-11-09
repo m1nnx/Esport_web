@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {font-family: 'Play', sans-serif;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+lh{
+	font-size: 24px;	
+}
+/* List */
+ol {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 50%;
+}
+
+/* List element */
+li {
+  font-size: 18px;
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@use postcss-preset-env {
+  stage: 0;
+  autoprefixer: {
+    grid: true;
+  }
+  browsers: last 2 versions
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>Pubgm</title>
+</head>
+
+<body>
+	<center><a href="https://www.callofduty.com/mobile" target="_blank"><img src="codm.png" border="0" width="140" height="90" alt="game4"></a></center><br>
+	<table align="center" width="40%">
+		<tr>
+			<th>NAME</th>
+			<th>IGN</th>
+			<th>AGE</th>
+			<th>ORIGIN</th>
+			<th>ROLE</th>
+		</tr>
+		<tr>
+			<td>Naim Syahmi</td>
+			<td>Tgl`Cops</td>
+			<td>24</td>
+			<td>Wp Putrajaya</td>
+			<td>Rusher</td>
+		</tr>
+		<tr>
+			<td>Izz Ammar</td>
+			<td>Tgl`General</td>
+			<td>17</td>
+			<td>Port Dickson, Negeri Sembilan</td>
+			<td>Support</td>
+		</tr>
+		<tr>
+			<td>Iman Dani</td>
+			<td>Tgl`Iman</td>
+			<td>18</td>
+			<td>Sepang, Selangor</td>
+			<td>Sniper</td>
+		</tr>
+		<tr>
+			<td>Iskandar</td>
+			<td>Tgl`Is</td>
+			<td>25</td>
+			<td>Bangi, Selangor</td>
+			<td>Fragger</td>
+		</tr>
+	</table>
+	
+	<br>
+	<center><ol>
+		<lh>Team Achievements</lh>
+			<li>Champion - Yoodo Gaming Fest 2019</li>
+			<li>Champion - COD Mobile Championship Central Region 2020</li>
+			<li>Invitation - COD Mobile Showcase Malaysia 2020</li>
+	</ol></center>
+</body>
+</html>

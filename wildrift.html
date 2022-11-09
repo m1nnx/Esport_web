@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {font-family: 'Play', sans-serif;}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+lh{
+	font-size: 24px;	
+}
+/* List */
+ol {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 50%;
+}
+
+/* List element */
+li {
+  font-size: 18px;
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@use postcss-preset-env {
+  stage: 0;
+  autoprefixer: {
+    grid: true;
+  }
+  browsers: last 2 versions
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>Pubgm</title>
+</head>
+
+<body>
+	<center><a href="https://wildrift.leagueoflegends.com/ms-my/" target="_blank"><img src="wildrift.png" border="0" width="190" height="120" alt="game3"></a></center>
+	<table align="center" width="40%">
+		<tr>
+			<th>NAME</th>
+			<th>IGN</th>
+			<th>AGE</th>
+			<th>ORIGIN</th>
+			<th>ROLE</th>
+		</tr>
+		<tr>
+			<td>Shahmi Haniff</td>
+			<td>TR`Shahmi</td>
+			<td>22</td>
+			<td>Puchong, Selangor</td>
+			<td>Tank</td>
+		</tr>
+		<tr>
+			<td>Eric Amber</td>
+			<td>TR`Eric</td>
+			<td>19</td>
+			<td>Leeds, United Kingdom</td>
+			<td>Mage</td>
+		</tr>
+		<tr>
+			<td>Wong Lee Hong</td>
+			<td>TR`uLevelup</td>
+			<td>25</td>
+			<td>Subang, Selangor</td>
+			<td>Assasin</td>
+		</tr>
+		<tr>
+			<td>Arif Zafran</td>
+			<td>TR`Master</td>
+			<td>23</td>
+			<td>Kanjang, Selangor</td>
+			<td>Marksman</td>
+		</tr>
+	</table>
+	
+	<br>
+	<center><ol>
+		<lh>Team Achievements</lh>
+			<li> Invitation - League Of Legends Wild Rift Lunching Event 2020</li>
+	</ol></center>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {font-family: 'Play', sans-serif;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+lh{
+	font-size: 24px;	
+}
+/* List */
+ol {
+  counter-reset: index;  
+  padding: 0;
+  max-width: 50%;
+}
+
+/* List element */
+li {
+  font-size: 18px;
+  counter-increment: index; 
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@use postcss-preset-env {
+  stage: 0;
+  autoprefixer: {
+    grid: true;
+  }
+  browsers: last 2 versions
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>Pubgm</title>
+</head>
+
+<body>
+	<center><a href="http://www.pubgmobile.com/en/event/frostfestival/" target="_blank"><img src="pubg.png" border="0" width="160" height="120" alt="game1"></a></center>
+	<table align="center" width="40%">
+		<tr>
+			<th>NAME</th>
+			<th>IGN</th>
+			<th>AGE</th>
+			<th>ORIGIN</th>
+			<th>ROLE</th>
+		</tr>
+		<tr>
+			<td>Amin Zaini</td>
+			<td>TRI`AMz</td>
+			<td>20</td>
+			<td>Puchong, Selangor</td>
+			<td>Scouter</td>
+		</tr>
+		<tr>
+			<td>Nur Hasyim</td>
+			<td>TRI`Hssm</td>
+			<td>20</td>
+			<td>Ampang, Wp Kuala Lumpur</td>
+			<td>Support</td>
+		</tr>
+		<tr>
+			<td>Amzar Fawwaz</td>
+			<td>TRI`ZarX</td>
+			<td>23</td>
+			<td>Sungkai, Perak</td>
+			<td>Fragger</td>
+		</tr>
+		<tr>
+			<td>Saiful Adam</td>
+			<td>TRI`Adems</td>
+			<td>19</td>
+			<td>Alor Setar, Kedah</td>
+			<td>Fragger</td>
+		</tr>
+	</table>
+	
+	<br>
+	<center><ol>
+		<lh>Team Achievements</lh>
+			<li> Champion - Klang Valley Pubg Mobile League 2019</li>
+		<li> 2nd Runner Up - Pubg Mobile Professional League S1 2020</li>
+		<li> Runner Up - MBSA Pubg Mobile Cup 2020</li>
+	</ol></center>
+</body>
+</html>

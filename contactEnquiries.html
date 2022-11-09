@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<link href="styleregister.css" rel="stylesheet" type"text/css">
+<title>Enquiries</title>
+</head>
+	
+<script language="javascript">
+function validateFormEn()
+	{
+		var valid=true;
+		if(document.register.name.value=='')
+			{
+				alert("Please fill in your name.");
+				document.register.name.focus();
+				valid=false;
+			}	
+		if((document.register.phone.value==''))
+			{
+				alert("Please fill in your phone number.");
+				document.register.phone.focus();
+				valid=false;
+			}
+		if(document.register.email.value=='')
+			{
+				alert("Please fill in your email.");
+				document.register.email.focus();
+				valid=false;
+			}
+		if(document.register.enquiry.value=='')
+			{
+				alert("Please write your enquiry.");
+				document.register.enquiry.focus();
+				valid=false;
+			}
+		if(valid==true)
+			{
+				alert("Thank you for your enquiry!")
+			}
+		return valid;
+		
+	}
+</script>
+
+<body style="font-family: 'Play', sans-serif;">
+	<form name="register" action"" method="post" onSubmit="return validateFormEn();">
+				<table align="center" width="650">
+					<tr>
+						<td width="130"><i>Name</i></td>
+						<td width="458"><input type="text" id="name" name="name" placeholder="Your name"></td>
+					</tr>
+					<tr>
+						<td width="130"><i>Phone Number</i></td>
+						<td><input type="tel" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><small style="opacity: 0.8"> Format: 019-453-3211</small></td>
+					</tr>
+					<tr>
+						<td width="130"><i>Email</i></td>
+						<td><input type="text" id="email" name="email" placeholder="Your email address"></td>
+					</tr>
+					<tr>
+						<td width="130" style="vertical-align: top ; padding-top: 15px;"><i>Enquiry</i></td>
+						<td><textarea id="enquiry" name="enquiry" placeholder="Your enquiry" style="height:120px; width: 80%; font-family: 'Arial', sans-serif;
+							font-size: 12px;"></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><br><input type="reset" value=" Reset "><input type="submit" value="Submit"></td>
+					</tr>
+
+				</table>
+			</form>
+</body>
+</html>
